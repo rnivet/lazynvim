@@ -9,7 +9,7 @@ return {
             vsplit = "<CR>",
           },
         },
-        definition = {
+        definition_action_keys = {
           quit = "q",
         },
       })
