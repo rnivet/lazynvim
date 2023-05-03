@@ -21,7 +21,12 @@ return {
       table.insert(opts.sources, require("null-ls.builtins.code_actions.gomodifytags"))
       table.insert(opts.sources, require("null-ls.builtins.code_actions.impl"))
       table.insert(opts.sources, require("null-ls.builtins.formatting.gofumpt"))
-      table.insert(opts.sources, require("null-ls.builtins.formatting.goimports_reviser"))
+      table.insert(
+        opts.sources,
+        require("null-ls.builtins.formatting.goimports_reviser").with({
+          generator_opts = { args = { "-project-name", "gitlabdev.vadesecure.com", "$FILENAME" } },
+        })
+      )
     end,
   },
 }
