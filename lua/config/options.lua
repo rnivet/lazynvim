@@ -6,3 +6,4 @@ local opt = vim.opt
 
 opt.expandtab = false
 opt.colorcolumn = "85"
+opt.foldmethod = "indent"
