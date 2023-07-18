@@ -20,7 +20,7 @@ return {
       { "nvim-treesitter/nvim-treesitter" },
     },
     keys = {
-      { "gf", "<cmd>Lspsaga lsp_finder<CR>" },
+      { "gf", "<cmd>Lspsaga finder<CR>" },
       { "gt", "<cmd>Lspsaga peek_type_definition<CR>" },
     },
   },
